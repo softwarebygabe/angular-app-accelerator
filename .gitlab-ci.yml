@@ -1,0 +1,12 @@
+image: node:latest
+
+before_script:
+  - npm install -g karma
+  - npm install -g jasmine
+  - npm install -g karma-cli
+  - npm install
+  - npm ls
+
+test:
+  script:
+    - npm test
